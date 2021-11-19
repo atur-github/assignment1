@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'M PLUS 1', sans-serif;
     font-weight: 300;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .wrapper {
@@ -26,7 +26,7 @@ p {
 
 .aside-1 {
     background-color: green;
-    /* flex-grow: 1; */
+    flex-shrink: 0;
 }
 
 .user-info {
@@ -74,6 +74,7 @@ p {
     text-decoration: none;
     color: #fff;
     position: relative;
+    font-size: .85rem;
 }
 
 .menu-item__link i {
@@ -83,6 +84,7 @@ p {
 .menu-item__link:link,
 .menu-item__link:visited {
     text-decoration: none;
+    color: #fff;
 }
 
 .menu-item__link:active,
@@ -121,13 +123,14 @@ li.category-item {
 .category-item .category-item__link:visited,
 .category-item .category-item__link:link {
     text-decoration: none;
+    color: #fff;
 }
 
-.category-item .bullet,
+.bullet,
 .category-item > span {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 5px;
     margin-right: .5rem;
     color: #fff;
@@ -190,41 +193,190 @@ footer.sidebar-footer {
 
 
 .main-panel {
-    background-color: gray;
+    background-color: darkcyan;
     flex-grow: 1;
 }
 
+.top-header {
+    height: 70px;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
 
+.search-box {
+    position: relative;
+}
 
+.search-box input {
+    height: 100%;
+    padding: .5rem .5rem .5rem 2rem;
+}
 
+.search-box input:focus {
+    outline: none;
+}
 
+.search-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 10%;
+    color: gray;
+}
 
+.header-icons {
+    display: flex;
+    align-items: center;
+}
 
+.header-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
 
+.header-icons p {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.header-icons span {
+    font-size: 1.5rem;
+}
 
+.notification-icon {
+    cursor: pointer;
+    position: relative;
+}
 
+.notification-icon .has-notification::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 4px solid red;
+    border-radius: 4px;
+    top: 0;
+    right: 0;
+}
 
+.main-content {
+    padding: 1rem 2rem;
+}
 
+.notes-header {
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
 
+.notes-header .categories-filter {
+}
 
+.notes-header .categories-filter a {
+    text-decoration: none;
+    padding: .4rem 1rem;
+    border-radius: 2px;
+    transition: background-color .3s;
+}
 
+.notes-header .categories-filter a:link,
+.notes-header .categories-filter a:visited {
+    text-decoration: none;
+    color: inherit;
+}
 
+.notes-header .categories-filter a:hover,
+.notes-header .categories-filter a:active {
+    background-color: darkkhaki;
+}
 
+.notes-header .categories-filter a.active {
+    background-color: darkkhaki;
+}
 
+.notes-action {
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: border-bottom .3s;
+}
 
+.notes-action:link,
+.notes-action:visited {
+    text-decoration: none;
+    color: inherit;
+}
 
+.notes-action:hover,
+.notes-action:active {
+    border-bottom-color: gray;
+}
 
+.notes-action i {
+    margin-right: .3rem;
+}
 
+.notes-wrapper {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: cornflowerblue;
+    padding: .7rem 0;
+    gap: 1rem .5rem;
+    overflow-y: auto;
+}
 
+.note {
+    width: 23%;
+    min-width: 200px;
+    height: 200px;
+    padding: 1rem 1rem 2rem 1rem;
+    overflow: hidden;
+    background-color: cornsilk;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #888;
+}
 
+.note .note-date {
+    font-size: .7rem;
+    font-weight: 300;
+    margin-bottom: .7rem;
+}
 
+.note .note-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-height: 110px;
+    margin-bottom: .7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.note .note-content {
+    font-size: .9rem;
+    /* text-align: justify; */
+    overflow: hidden;
+}
 
+.note .note-content p {
+    max-height: 80px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
 
-
-
-
+.note .note-image {
+    max-height: 90px;
+    width: 100%;
+}
 
 
 

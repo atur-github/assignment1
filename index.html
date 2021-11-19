@@ -7,10 +7,7 @@
         <title>Note Writing</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500&display=swap" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -94,7 +91,72 @@
                   <p class="copy-right-text">2021 Atour Eisayans</p>
                 </footer>
             </aside>
-            <main class="main-panel"></main>
+            <main class="main-panel">
+              <header class="top-header">
+                <div class="search-box">
+                  <span class="search-icon"><i class="fas fa-search"></i></span>
+                  <input type="search" placeholder="Search" class="search-input">
+                </div>
+                <div class="header-icons">
+                  <img src="./user-icon.jpg" alt="User Image">
+                  <p>Hello, Peter!</p>
+                  <span class="notification-icon"><i class="far fa-bell has-notification"></i></span>
+                </div>
+              </header>
+              <section class="main-content">
+                <header class="notes-header">
+                  <div class="categories-filter">
+                    <a href="#" class="active">All</a><a href="#">Projects</a><a href="#">Buisiness</a><a href="#">Personal</a>
+                  </div>
+                  <div class="notes-actions">
+                    <a href="#" class="notes-action">
+                      <i class="fas fa-plus"></i>
+                      <span>Add new note</span>
+                    </a>
+                  </div>
+                </header>
+                <section class="notes-wrapper">
+                  <div class="note">
+                    <p class="note-date">23 June, 2017</p>
+                    <h3 class="note-title"><span class="bullet bullet-red"></span>Title</h3>
+                    <div class="note-content">
+                      <p>
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                        This is content
+                      </p>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <p class="note-date">23 June, 2017</p>
+                    <h3 class="note-title"><span class="bullet bullet-green"></span>Title
+                      This is also title
+                      This is also title
+                      This is also title
+                      This is also title
+                      This is also title
+                    </h3>
+                  </div>
+                  <div class="note">
+                    <p class="note-date">23 June, 2017</p>
+                    <h3 class="note-title"><span class="bullet bullet-blue"></span>Title</h3>
+                    <img class="note-image" src="./Tulips.jpg" alt="Nice Flowers" />
+                  </div>
+                </section>
+              </section>
+            </main>
         </div>
     </body>
     <script src="scripts.js"></script>
